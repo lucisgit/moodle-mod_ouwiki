@@ -70,9 +70,9 @@ class mod_ouwiki_mod_form extends moodleform_mod {
         $mform->addHelpButton('timeout', 'timeout', 'ouwiki');
 
         // Read-only controls.
-        $mform->addElement('date_selector', 'editbegin', get_string('editbegin', 'ouwiki'), array('optional' => true));
+        $mform->addElement('date_time_selector', 'editbegin', get_string('editbegin', 'ouwiki'), array('optional' => true));
         $mform->addHelpButton('editbegin', 'editbegin', 'ouwiki');
-        $mform->addElement('date_selector', 'editend', get_string('editend', 'ouwiki'), array('optional' => true));
+        $mform->addElement('date_time_selector', 'editend', get_string('editend', 'ouwiki'), array('optional' => true));
         $mform->addHelpButton('editend', 'editend', 'ouwiki');
 
         // Display any template usage warning messages.
